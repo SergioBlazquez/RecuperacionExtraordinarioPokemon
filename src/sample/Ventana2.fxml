@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Ventana2">
+   <children>
+      <HBox prefHeight="200.0" prefWidth="500.0">
+         <children>
+            <VBox prefHeight="800.0" prefWidth="800.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <AnchorPane prefHeight="100.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <HBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label prefWidth="800.0" text="PS" HBox.hgrow="ALWAYS" />
+                                    <Label alignment="CENTER_RIGHT" prefWidth="800.0" text="200/200" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin></Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="200.0">
+                                 <children>
+                                    <ProgressBar prefWidth="200.0" progress="0.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label prefWidth="800.0" text="Ataque" HBox.hgrow="ALWAYS" />
+                                    <Label alignment="CENTER_RIGHT" prefWidth="800.0" text="94" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label prefWidth="800.0" text="Defensa" HBox.hgrow="ALWAYS" />
+                                    <Label alignment="CENTER_RIGHT" prefWidth="800.0" text="70" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label prefWidth="800.0" text="Atc. Esp." HBox.hgrow="ALWAYS" />
+                                    <Label alignment="CENTER_RIGHT" prefWidth="800.0" text="68" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label prefWidth="800.0" text="Def. Esp." HBox.hgrow="ALWAYS" />
+                                    <Label alignment="CENTER_RIGHT" prefWidth="800.0" text="88" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label prefWidth="800.0" text="Veloc" HBox.hgrow="ALWAYS" />
+                                    <Label alignment="CENTER_RIGHT" prefWidth="800.0" text="79" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children></VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="30.0" right="20.0" top="20.0" />
+                     </VBox.margin></AnchorPane>
+                  <AnchorPane prefHeight="100.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <HBox prefHeight="50.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label prefWidth="800.0" style="-fx-background-color: #A4A4A4;" text="Habilidad" HBox.hgrow="ALWAYS">
+                                       <padding>
+                                          <Insets right="50.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label prefWidth="800.0" text="Mudar" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Label alignment="TOP_LEFT" prefHeight="200.0" prefWidth="200.0" text="Cura los problemas de estado mudando la piel" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="800.0" prefWidth="800.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label prefWidth="100.0" text="CARACTERÍSTICAS" VBox.vgrow="ALWAYS" />
+                  <VBox prefHeight="100.0" prefWidth="100.0">
+                     <children>
+                        <HBox prefHeight="50.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../images/pokeball.png" />
+                                 </image></ImageView>
+                              <Label text="Dragonair" HBox.hgrow="ALWAYS">
+                                 <padding>
+                                    <Insets right="100.0" />
+                                 </padding></Label>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../images/femenino.png" />
+                                 </image></ImageView>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label text="Nv.47" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/dragonair.png" />
+                     </image></ImageView>
+                  <VBox prefHeight="100.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Objeto" VBox.vgrow="ALWAYS" />
+                        <Label text="Ninguno" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </children></VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
