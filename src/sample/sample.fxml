@@ -2,61 +2,516 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <VBox prefHeight="500.0" prefWidth="600.0">
          <children>
             <HBox prefHeight="120.0" prefWidth="600.0">
                <VBox.margin>
-                  <Insets top="20.0" />
+                  <Insets left="20.0" right="20.0" top="20.0" />
                </VBox.margin>
                <children>
-                  <Label alignment="CENTER" prefHeight="100.0" prefWidth="250.0" style="-fx-background-color: #D5D8DC;" text="Label">
+                  <AnchorPane prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #56AC01;">
+                     <children>
+                        <VBox prefHeight="100.0" prefWidth="250.0">
+                           <children>
+                              <HBox prefHeight="45.0" prefWidth="250.0">
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/dragonair.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefWidth="150.0" text="GoGeid">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="23.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/masculion.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children></HBox>
+                              <HBox prefHeight="15.0" prefWidth="100.0">
+                                 <children>
+                                    <AnchorPane prefHeight="15.0" prefWidth="150.0">
+                                       <children>
+                                          <HBox prefHeight="15.0" prefWidth="140.0" style="-fx-background-color: #000000;">
+                                             <children>
+                                                <Label maxHeight="15.0" minHeight="15.0" prefHeight="15.0" text="PS" textFill="#bc7604">
+                                                   <HBox.margin>
+                                                      <Insets top="2.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font></Label>
+                                                <ProgressBar prefHeight="15.0" prefWidth="120.0" progress="0.0">
+                                                   <HBox.margin>
+                                                      <Insets top="1.0" />
+                                                   </HBox.margin></ProgressBar>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin></AnchorPane>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin></HBox>
+                              <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefWidth="200.0" text="NV.21">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefWidth="200.0" text="57/57">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children></HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
                      <HBox.margin>
-                        <Insets left="10.0" top="10.0" />
+                        <Insets right="20.0" />
                      </HBox.margin>
-                  </Label>
-                  <Label alignment="CENTER" prefHeight="100.0" prefWidth="250.0" style="-fx-background-color: #D5D8DC;" text="Label">
+                  </AnchorPane>
+                  <AnchorPane prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #56AC01;">
+                     <children>
+                        <VBox prefHeight="100.0" prefWidth="250.0">
+                           <children>
+                              <HBox prefHeight="45.0" prefWidth="250.0">
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/dragonair.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefWidth="150.0" text="Merlin">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="23.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/masculion.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="15.0" prefWidth="100.0">
+                                 <children>
+                                    <AnchorPane prefHeight="15.0" prefWidth="150.0">
+                                       <children>
+                                          <HBox prefHeight="15.0" prefWidth="140.0" style="-fx-background-color: #000000;">
+                                             <children>
+                                                <Label maxHeight="15.0" minHeight="15.0" prefHeight="15.0" text="PS" textFill="#bc7604">
+                                                   <HBox.margin>
+                                                      <Insets top="2.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                </Label>
+                                                <ProgressBar prefHeight="15.0" prefWidth="120.0" progress="0.0">
+                                                   <HBox.margin>
+                                                      <Insets top="1.0" />
+                                                   </HBox.margin>
+                                                </ProgressBar>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                    </AnchorPane>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefWidth="200.0" text="NV.24">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefWidth="200.0" text="57/57">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
                      <HBox.margin>
-                        <Insets left="100.0" top="10.0" />
+                        <Insets left="20.0" />
                      </HBox.margin>
-                  </Label>
+                  </AnchorPane>
                </children>
             </HBox>
-            <HBox layoutX="10.0" layoutY="30.0" prefHeight="120.0" prefWidth="600.0">
+            <HBox layoutX="30.0" layoutY="30.0" prefHeight="120.0" prefWidth="600.0">
                <children>
-                  <Label alignment="CENTER" prefHeight="100.0" prefWidth="250.0" style="-fx-background-color: #D5D8DC;" text="Label">
+                  <AnchorPane prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #56AC01;">
+                     <children>
+                        <VBox prefHeight="100.0" prefWidth="250.0">
+                           <children>
+                              <HBox prefHeight="45.0" prefWidth="250.0">
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/dragonair.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefWidth="150.0" text="Sam">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="23.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/femenino.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="15.0" prefWidth="100.0">
+                                 <children>
+                                    <AnchorPane prefHeight="15.0" prefWidth="150.0">
+                                       <children>
+                                          <HBox prefHeight="15.0" prefWidth="140.0" style="-fx-background-color: #000000;">
+                                             <children>
+                                                <Label maxHeight="15.0" minHeight="15.0" prefHeight="15.0" text="PS" textFill="#bc7604">
+                                                   <HBox.margin>
+                                                      <Insets top="2.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                </Label>
+                                                <ProgressBar prefHeight="15.0" prefWidth="120.0" progress="0.0">
+                                                   <HBox.margin>
+                                                      <Insets top="1.0" />
+                                                   </HBox.margin>
+                                                </ProgressBar>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                    </AnchorPane>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefWidth="200.0" text="NV.24">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefWidth="200.0" text="84/84">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
                      <HBox.margin>
-                        <Insets left="10.0" top="10.0" />
+                        <Insets right="20.0" />
                      </HBox.margin>
-                  </Label>
-                  <Label alignment="CENTER" prefHeight="100.0" prefWidth="250.0" style="-fx-background-color: #D5D8DC;" text="Label">
+                  </AnchorPane>
+                  <AnchorPane prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #56AC01;">
+                     <children>
+                        <VBox prefHeight="100.0" prefWidth="250.0">
+                           <children>
+                              <HBox prefHeight="45.0" prefWidth="250.0">
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/dragonair.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefWidth="150.0" text="Kin">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="23.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="15.0" prefWidth="100.0">
+                                 <children>
+                                    <AnchorPane prefHeight="15.0" prefWidth="150.0">
+                                       <children>
+                                          <HBox prefHeight="15.0" prefWidth="140.0" style="-fx-background-color: #000000;">
+                                             <children>
+                                                <Label maxHeight="15.0" minHeight="15.0" prefHeight="15.0" text="PS" textFill="#bc7604">
+                                                   <HBox.margin>
+                                                      <Insets top="2.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                </Label>
+                                                <ProgressBar prefHeight="15.0" prefWidth="120.0" progress="0.0">
+                                                   <HBox.margin>
+                                                      <Insets top="1.0" />
+                                                   </HBox.margin>
+                                                </ProgressBar>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                    </AnchorPane>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefWidth="200.0" text="NV.21">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefWidth="200.0" text="60/60">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
                      <HBox.margin>
-                        <Insets left="100.0" top="10.0" />
+                        <Insets left="20.0" />
                      </HBox.margin>
-                  </Label>
+                  </AnchorPane>
                </children>
                <VBox.margin>
-                  <Insets top="20.0" />
+                  <Insets left="20.0" right="20.0" top="20.0" />
                </VBox.margin>
             </HBox>
-            <HBox layoutX="10.0" layoutY="30.0" prefHeight="120.0" prefWidth="600.0">
+            <HBox layoutX="30.0" layoutY="30.0" prefHeight="120.0" prefWidth="600.0">
                <children>
-                  <Label alignment="CENTER" prefHeight="100.0" prefWidth="250.0" style="-fx-background-color: #D5D8DC;" text="Label">
+                  <AnchorPane prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #56AC01;">
+                     <children>
+                        <VBox prefHeight="100.0" prefWidth="250.0">
+                           <children>
+                              <HBox prefHeight="45.0" prefWidth="250.0">
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/dragonair.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefWidth="150.0" text="Magalodon">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="23.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/masculion.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="15.0" prefWidth="100.0">
+                                 <children>
+                                    <AnchorPane prefHeight="15.0" prefWidth="150.0">
+                                       <children>
+                                          <HBox prefHeight="15.0" prefWidth="140.0" style="-fx-background-color: #000000;">
+                                             <children>
+                                                <Label maxHeight="15.0" minHeight="15.0" prefHeight="15.0" text="PS" textFill="#bc7604">
+                                                   <HBox.margin>
+                                                      <Insets top="2.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                </Label>
+                                                <ProgressBar prefHeight="15.0" prefWidth="120.0" progress="0.0">
+                                                   <HBox.margin>
+                                                      <Insets top="1.0" />
+                                                   </HBox.margin>
+                                                </ProgressBar>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                    </AnchorPane>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefWidth="200.0" text="NV.24">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefWidth="200.0" text="70/70">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
                      <HBox.margin>
-                        <Insets left="10.0" top="10.0" />
+                        <Insets right="20.0" />
                      </HBox.margin>
-                  </Label>
-                  <Label alignment="CENTER" prefHeight="100.0" prefWidth="250.0" style="-fx-background-color: #D5D8DC;" text="Label">
+                  </AnchorPane>
+                  <AnchorPane prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #56AC01;">
+                     <children>
+                        <VBox prefHeight="100.0" prefWidth="250.0">
+                           <children>
+                              <HBox prefHeight="45.0" prefWidth="250.0">
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/dragonair.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefWidth="150.0" text="Papu">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="23.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/masculion.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="15.0" prefWidth="100.0">
+                                 <children>
+                                    <AnchorPane prefHeight="15.0" prefWidth="150.0">
+                                       <children>
+                                          <HBox prefHeight="15.0" prefWidth="140.0" style="-fx-background-color: #000000;">
+                                             <children>
+                                                <Label maxHeight="15.0" minHeight="15.0" prefHeight="15.0" text="PS" textFill="#bc7604">
+                                                   <HBox.margin>
+                                                      <Insets top="2.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                </Label>
+                                                <ProgressBar prefHeight="15.0" prefWidth="120.0" progress="0.0">
+                                                   <HBox.margin>
+                                                      <Insets top="1.0" />
+                                                   </HBox.margin>
+                                                </ProgressBar>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                    </AnchorPane>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefWidth="200.0" text="NV.26">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefWidth="200.0" text="89/89">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
                      <HBox.margin>
-                        <Insets left="100.0" top="10.0" />
+                        <Insets left="20.0" />
                      </HBox.margin>
-                  </Label>
+                  </AnchorPane>
                </children>
                <VBox.margin>
-                  <Insets top="20.0" />
+                  <Insets left="20.0" right="20.0" top="20.0" />
                </VBox.margin>
             </HBox>
             <HBox prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #A0C8FE;">
@@ -64,12 +519,12 @@
                   <Insets top="30.0" />
                </VBox.margin>
                <children>
-                  <Label prefHeight="50.0" prefWidth="300.0" text="Elige un Pokémon.">
+                  <Label fx:id="label" prefHeight="50.0" prefWidth="300.0" text="Elige un Pokémon.">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>
                   </Label>
-                  <Button mnemonicParsing="false" text="SALIR">
+                  <Button fx:id="boton1" mnemonicParsing="false" onMouseClicked="#onClickBoton1" text="SALIR">
                      <HBox.margin>
                         <Insets left="200.0" top="15.0" />
                      </HBox.margin>
