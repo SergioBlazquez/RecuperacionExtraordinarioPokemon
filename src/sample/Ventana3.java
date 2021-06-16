@@ -12,4 +12,7 @@ public class Ventana3 {
 
         label1.setText(string);
     }
+
+
+
 }

@@ -10,9 +10,9 @@
    <children>
       <HBox layoutX="3.0" prefHeight="250.0" prefWidth="400.0">
          <children>
-            <VBox prefHeight="250.0" prefWidth="300.0">
+            <VBox prefHeight="250.0" prefWidth="300.0" style="-fx-background-color: #FC4747;">
                <children>
-                  <AnchorPane maxWidth="205.0" minWidth="205.0" prefHeight="60.0" prefWidth="205.0">
+                  <AnchorPane maxWidth="205.0" minWidth="205.0" prefHeight="60.0" prefWidth="205.0" style="-fx-background-color: #FFFFFF;">
                      <VBox.margin>
                         <Insets left="15.0" right="30.0" />
                      </VBox.margin>
@@ -51,7 +51,7 @@
                            </children>
                         </VBox>
                      </children></AnchorPane>
-                  <AnchorPane layoutX="25.0" layoutY="10.0" maxWidth="205.0" minWidth="205.0" prefHeight="60.0" prefWidth="205.0">
+                  <AnchorPane layoutX="25.0" layoutY="10.0" maxWidth="205.0" minWidth="205.0" prefHeight="60.0" prefWidth="205.0" style="-fx-background-color: #FFFFFF;">
                      <children>
                         <VBox prefHeight="50.0" prefWidth="205.0">
                            <children>
@@ -91,7 +91,7 @@
                         <Insets left="15.0" right="30.0" />
                      </VBox.margin>
                   </AnchorPane>
-                  <AnchorPane layoutX="10.0" layoutY="60.0" maxWidth="205.0" minWidth="205.0" prefHeight="60.0" prefWidth="205.0">
+                  <AnchorPane layoutX="10.0" layoutY="60.0" maxWidth="205.0" minWidth="205.0" prefHeight="60.0" prefWidth="205.0" style="-fx-background-color: #FFFFFF;">
                      <children>
                         <VBox prefHeight="50.0" prefWidth="205.0">
                            <children>
@@ -133,7 +133,7 @@
                   </AnchorPane>
                   <AnchorPane layoutX="10.0" layoutY="110.0" maxWidth="205.0" minWidth="205.0" prefHeight="60.0" prefWidth="205.0">
                      <children>
-                        <VBox prefHeight="50.0" prefWidth="205.0">
+                        <VBox prefHeight="50.0" prefWidth="205.0" style="-fx-background-color: #FFFFFF;">
                            <children>
                               <HBox prefHeight="25.0" prefWidth="205.0">
                                  <children>
@@ -173,11 +173,20 @@
                   </AnchorPane>
                </children>
                <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
                   <Insets top="10.0" />
-               </HBox.margin></VBox>
+               </padding></VBox>
             <VBox prefHeight="250.0" prefWidth="200.0">
                <children>
-                  <Label fx:id="label1" text="MOV. COMBATE" />
+                  <Label fx:id="label1" style="-fx-background-color: FC4747;" text="MOV. COMBATE" textFill="WHITE">
+                     <padding>
+                        <Insets right="60.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></Label>
                   <VBox prefHeight="200.0" prefWidth="100.0">
                      <children>
                         <HBox prefHeight="100.0" prefWidth="200.0">
@@ -242,7 +251,7 @@
                         </HBox>
                      </children>
                      <VBox.margin>
-                        <Insets left="5.0" top="20.0" />
+                        <Insets left="5.0" top="10.0" />
                      </VBox.margin>
                   </VBox>
                </children></VBox>
@@ -255,7 +264,7 @@
                   <Insets left="15.0" top="10.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" text="Button">
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: FC4747;" text="Button">
                <HBox.margin>
                   <Insets left="15.0" top="10.0" />
                </HBox.margin>
@@ -265,7 +274,7 @@
                   <Insets left="15.0" top="10.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="SALIR">
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #1D51F4;" text="SALIR" textFill="WHITE">
                <HBox.margin>
                   <Insets left="75.0" top="10.0" />
                </HBox.margin>

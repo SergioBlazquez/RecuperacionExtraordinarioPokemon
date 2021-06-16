@@ -6,11 +6,17 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+
+import java.util.ArrayList;
 
 public class Controller {
 
     Ventana2 controllerVentana2=null;
+
+    Pokemon pokemon1 = new Pokemon("Charmander",14,35,54,'m',"Intimidar","Baya Brambu");
+
 
     @FXML
     Button boton1;
@@ -51,6 +57,13 @@ public class Controller {
 
             Ventana3 controller2 = loader2.getController();
             controller2.pasarString(string);
+
+            Stage stage3 = new Stage();
+            FXMLLoader loader3 = new FXMLLoader(getClass().getResource("ListaAtaques.fxml"));
+            VBox root3 = (VBox) loader3.load();
+            Scene scene3 = new Scene(root3,500,500);
+            stage3.setScene(scene3);
+            stage3.show();
 
 
         } catch(Exception e) {
