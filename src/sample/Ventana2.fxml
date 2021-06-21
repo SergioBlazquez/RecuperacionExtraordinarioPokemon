@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Ventana2">
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Ventana2">
    <children>
       <HBox prefHeight="200.0" prefWidth="400.0">
          <children>
@@ -24,7 +25,7 @@
                                        <padding>
                                           <Insets bottom="5.0" />
                                        </padding></Label>
-                                    <Label alignment="CENTER_RIGHT" prefWidth="800.0" text="200/200" HBox.hgrow="ALWAYS">
+                                    <Label fx:id="labelPS" alignment="CENTER_RIGHT" prefWidth="800.0" text="200/200" HBox.hgrow="ALWAYS">
                                        <HBox.margin>
                                           <Insets left="50.0" />
                                        </HBox.margin></Label>
@@ -47,7 +48,7 @@
                                        <padding>
                                           <Insets bottom="15.0" />
                                        </padding></Label>
-                                    <Label alignment="CENTER_RIGHT" prefWidth="800.0" text="94" HBox.hgrow="ALWAYS">
+                                    <Label fx:id="labelAtaque" alignment="CENTER_RIGHT" prefWidth="800.0" text="94" HBox.hgrow="ALWAYS">
                                        <HBox.margin>
                                           <Insets left="50.0" />
                                        </HBox.margin>
@@ -60,7 +61,7 @@
                                        <padding>
                                           <Insets bottom="15.0" />
                                        </padding></Label>
-                                    <Label alignment="CENTER_RIGHT" prefWidth="800.0" text="70" HBox.hgrow="ALWAYS">
+                                    <Label fx:id="labelDefensa" alignment="CENTER_RIGHT" prefWidth="800.0" text="70" HBox.hgrow="ALWAYS">
                                        <HBox.margin>
                                           <Insets left="50.0" />
                                        </HBox.margin>
@@ -73,7 +74,7 @@
                                        <padding>
                                           <Insets bottom="15.0" />
                                        </padding></Label>
-                                    <Label alignment="CENTER_RIGHT" prefWidth="800.0" text="68" HBox.hgrow="ALWAYS">
+                                    <Label fx:id="labelAtcEsp" alignment="CENTER_RIGHT" prefWidth="800.0" text="68" HBox.hgrow="ALWAYS">
                                        <HBox.margin>
                                           <Insets left="50.0" />
                                        </HBox.margin>
@@ -86,7 +87,7 @@
                                        <padding>
                                           <Insets bottom="15.0" />
                                        </padding></Label>
-                                    <Label alignment="CENTER_RIGHT" prefWidth="800.0" text="88" HBox.hgrow="ALWAYS">
+                                    <Label fx:id="labelDefEsp" alignment="CENTER_RIGHT" prefWidth="800.0" text="88" HBox.hgrow="ALWAYS">
                                        <HBox.margin>
                                           <Insets left="50.0" />
                                        </HBox.margin>
@@ -99,7 +100,7 @@
                                        <padding>
                                           <Insets bottom="15.0" />
                                        </padding></Label>
-                                    <Label alignment="CENTER_RIGHT" prefWidth="800.0" text="79" HBox.hgrow="ALWAYS">
+                                    <Label fx:id="labelVeloc" alignment="CENTER_RIGHT" prefWidth="800.0" text="79" HBox.hgrow="ALWAYS">
                                        <HBox.margin>
                                           <Insets left="50.0" />
                                        </HBox.margin>
@@ -118,7 +119,7 @@
                               <HBox prefHeight="50.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                                  <children>
                                     <Label prefWidth="800.0" style="-fx-background-color: #A4A4A4;" text="Habilidad" textFill="WHITE" HBox.hgrow="ALWAYS" />
-                                    <Label prefWidth="800.0" text="Mudar" HBox.hgrow="ALWAYS">
+                                    <Label fx:id="labelHabilidad" prefWidth="800.0" text="Mudar" HBox.hgrow="ALWAYS">
                                        <HBox.margin>
                                           <Insets />
                                        </HBox.margin>
@@ -148,30 +149,30 @@
                                  <HBox.margin>
                                     <Insets left="5.0" top="5.0" />
                                  </HBox.margin></ImageView>
-                              <Label text="Dragonair" textFill="WHITE" HBox.hgrow="ALWAYS" />
-                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                              <TextField fx:id="textFieldNombre" onKeyReleased="#onNombreCambiado" style="-fx-background-color: #A4A4A4;" text="Dragonair" />
+                              <ImageView fx:id="imageViewGenero" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
                                  <image>
                                     <Image url="@../images/femenino.png" />
                                  </image>
                                  <HBox.margin>
-                                    <Insets left="50.0" />
+                                    <Insets />
                                  </HBox.margin></ImageView>
                            </children>
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>
                         </HBox>
-                        <Label text="Nv.47" VBox.vgrow="ALWAYS" />
+                        <Label fx:id="labelNivel" text="Nv.47" VBox.vgrow="ALWAYS" />
                      </children>
                   </VBox>
-                  <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imageViewPokemon" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/dragonair.png" />
                      </image></ImageView>
                   <VBox prefHeight="100.0" prefWidth="100.0">
                      <children>
                         <Label prefHeight="17.0" prefWidth="150.0" style="-fx-background-color: #A4A4A4;" text="Objeto" textFill="WHITE" VBox.vgrow="ALWAYS" />
-                        <Label text="Ninguno" VBox.vgrow="ALWAYS" />
+                        <Label fx:id="labelObjeto" text="Ninguno" VBox.vgrow="ALWAYS" />
                      </children>
                   </VBox>
                </children></VBox>
